@@ -1,3 +1,63 @@
+# Zsh Configuration Setup
+
+This guide provides the steps to set up this Zsh configuration on a new machine.
+
+## Prerequisites
+
+Before you begin, ensure you have the following installed:
+
+* **zsh**
+    * **Ubuntu/Debian:**
+        ```bash
+        sudo apt update && sudo apt install -y zsh git
+        ```
+    * **Arch:**
+        ```bash
+        sudo pacman -S zsh git
+        ```
+* **Git** (included in the commands above)
+
+---
+
+## Installation
+
+1.  **Clone the repository** into the `~/.oh-my-zsh` directory.
+    ```bash
+    git clone git@github.com:Focus2321/ohmyzsh_hector.git ~/.oh-my-zsh
+    ```
+
+2.  **Link the `.zshrc` file** by running the provided script.
+    ```bash
+    chmod +x ~/.oh-my-zsh/link_zshrc.sh
+    ~/.oh-my-zsh/link_zshrc.sh
+    ```
+
+3.  **Set zsh as your default shell.**
+    ```bash
+    chsh -s "$(which zsh)"
+    ```
+    > **Note:** You will need to log out and log back in for this change to take full effect.
+
+4.  **Start zsh.**
+    ```bash
+    zsh
+    ```
+
+---
+
+## Syncing Changes
+
+Your `~/.zshrc` is symlinked to the `my_zshrc` file inside this repository. This means any changes you make to `~/.zshrc` will be reflected in the tracked file.
+
+To keep your configuration in sync across machines, commit and push any changes from within the repository directory:
+
+```bash
+cd ~/.oh-my-zsh
+git add my_zshrc
+git commit -m "Update zsh config"
+git push
+```
+
 <p align="center"><img src="https://ohmyzsh.s3.amazonaws.com/omz-ansi-github.png" alt="Oh My Zsh"></p>
 
 Oh My Zsh is an open source, community-driven framework for managing your [zsh](https://www.zsh.org/)
