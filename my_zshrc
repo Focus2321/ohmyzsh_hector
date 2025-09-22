@@ -112,3 +112,5 @@ fi
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 # p10k theme looks alright but way to much stuff
 # [[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
+
+alias start_venv="source .venv/bin/activate" 
