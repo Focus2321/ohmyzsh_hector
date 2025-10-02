@@ -115,6 +115,10 @@ fi
 
 alias start_venv="source .venv/bin/activate" 
 
+# NVM is the packet manager necessary to install npm and node.
+# You downlaod it using the curl command "curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash"
+# The below will load nvm
+
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
