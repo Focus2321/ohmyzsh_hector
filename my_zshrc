@@ -123,3 +123,7 @@ export TERM=xterm-256color
 # Exporting path for nvim 
 
 export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
+
+# Add nvim alias to zsh
+
+alias vim="nvim"

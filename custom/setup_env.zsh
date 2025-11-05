@@ -8,5 +8,3 @@ if [ "$SHELL" != "$(which zsh)" ]; then
   echo "💡 Setting Zsh as default shell..."
   chsh -s "$(which zsh)"
 fi
-
-echo "✅ Custom setup loaded from custom/setup_env.zsh"
