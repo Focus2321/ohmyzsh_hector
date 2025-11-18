@@ -127,3 +127,9 @@ export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
 # Add nvim alias to zsh
 
 alias vim="nvim"
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/home/hector/.lmstudio/bin"
+# End of LM Studio CLI section
+
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
