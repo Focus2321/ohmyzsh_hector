@@ -133,3 +133,7 @@ export PATH="$PATH:/home/hector/.lmstudio/bin"
 # End of LM Studio CLI section
 
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
+# Export SUDO EDITOR
+
+export SUDO_EDITOR=nvim
