@@ -113,8 +113,6 @@ fi
 # p10k theme looks alright but way to much stuff
 # [[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
 
-alias start_venv="source .venv/bin/activate" 
-
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
@@ -138,3 +136,9 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 export SUDO_EDITOR=nvim
 export SUDO_EDITOR=/home/linuxbrew/.linuxbrew/bin/nvim
+
+#Custom aliases
+
+alias start_venv="source .venv/bin/activate" 
+
+alias fixmouse="echo i2c_designware.0 | sudo tee /sys/bus/platform/drivers/i2c_designware/unbind && echo i2c_designware.0 | sudo tee /sys/bus/platform/drivers/i2c_designware/bind"
