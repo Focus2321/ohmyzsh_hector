@@ -135,7 +135,8 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 # Export SUDO EDITOR
 
 export SUDO_EDITOR=nvim
-export SUDO_EDITOR=/home/linuxbrew/.linuxbrew/bin/nvim
+export VISUAL=$SUDO_EDITOR
+export SUDO_EDITOR=/opt/nvim-linux-x86_64/bin/nvim
 
 #Custom aliases
 
@@ -145,3 +146,10 @@ alias fixmouse="echo i2c_designware.0 | sudo tee /sys/bus/platform/drivers/i2c_d
 
 # opencode
 export PATH=/home/hector/.opencode/bin:$PATH
+
+# bun completions
+[ -s "/home/hector/.bun/_bun" ] && source "/home/hector/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
