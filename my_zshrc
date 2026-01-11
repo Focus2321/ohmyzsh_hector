@@ -146,6 +146,8 @@ export SUDO_EDITOR=/opt/nvim-linux-x86_64/bin/nvim
 
 alias start_venv="source .venv/bin/activate" 
 
+alias cat="bat"
+
 alias fixmouse="echo i2c_designware.0 | sudo tee /sys/bus/platform/drivers/i2c_designware/unbind && echo i2c_designware.0 | sudo tee /sys/bus/platform/drivers/i2c_designware/bind"
 
 # opencode
