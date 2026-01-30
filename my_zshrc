@@ -81,7 +81,6 @@ plugins=(
   extract
   alias-finder
   fzf
-  zsh-ai
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -150,8 +149,6 @@ alias cat="bat"
 
 alias fixmouse="echo i2c_designware.0 | sudo tee /sys/bus/platform/drivers/i2c_designware/unbind && echo i2c_designware.0 | sudo tee /sys/bus/platform/drivers/i2c_designware/bind"
 
-# opencode
-export PATH=/home/hector/.opencode/bin:$PATH
 
 # bun completions
 [ -s "/home/hector/.bun/_bun" ] && source "/home/hector/.bun/_bun"
@@ -169,5 +166,6 @@ export ZSH_AI_PROMPT_EXTEND="Always prefer ripgrep (rg) over grep, fd over find"
 
 # --- END ZSH-AI config ---
 
-# opencode
-export PATH=/Users/hectorandrade/.opencode/bin:$PATH
+# opencode (cross-platform)
+export PATH="$HOME/.opencode/bin:$PATH"
+
